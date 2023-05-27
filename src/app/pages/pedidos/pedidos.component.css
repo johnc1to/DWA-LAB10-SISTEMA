@@ -1,0 +1,27 @@
+img {
+    border-radius: 5%;
+}
+
+h5 {
+    font-size: large;
+}
+
+p {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(169, 169, 34);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+ }
+ 
+button {
+    font-size: medium;
+    align-items: center;
+    font-weight: bolder;
+    color:#f6a821;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

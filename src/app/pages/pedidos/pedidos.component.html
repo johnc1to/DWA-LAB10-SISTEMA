@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<section class="content">
+    <div class="container-fluid">
+        <h1>PEDIDOS</h1>
+        <div class="row m-t-sm">
+            <div class="col-md-15">
+                <div class="panel">
+                    <div class="text-center font-bold c-white y-value" style="font-size: x-large;">
+                        <div id="val_a">Total Pedidos: {{elementos}}</div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 col-sm-12" id="list_alumnos">
+                            <div class="panel panel-filled">
+                                <div class="panel-body">  
+                                    <div class="table-responsive">
+                                        <div class="row">
+                                            <div class="col-md-3" *ngFor="let pedido of listPedidos">
+                                                <div class="card mb-4" style="width: 18rem; align-items: center; justify-content: center;">
+                                                    <img src="{{ pedido.imagen }}" class="card-img-top" width="360px" height="240px">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">{{ pedido.pedido }}</h5>
+                                                        <p class="card-text">{{ pedido.mesa }}</p>
+                                                        <button (click)="eliminarPedido(pedido._id)" class="btn btn-danger">Terminar pedido</button>
+                                                    </div>
+                                                    <br><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ 
+ 
